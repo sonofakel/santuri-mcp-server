@@ -1,0 +1,70 @@
+{
+  "name": "santuri-mcp-server",
+  "version": "1.1.0",
+  "description": "MCP server client for Santuri - documentation context for AI coding assistants",
+  "license": "MIT",
+  "author": "Santuri <hello@santuri.io> (https://santuri.io)",
+  "homepage": "https://github.com/sonofakel/santuri-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonofakel/santuri-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonofakel/santuri-mcp-server/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "santuri-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "documentation",
+    "ai",
+    "coding-assistant",
+    "claude",
+    "cursor",
+    "windsurf",
+    "santuri"
+  ],
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitest/coverage-v8": "^4.0.15",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^4.0.15"
+  }
+}

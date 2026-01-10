@@ -46,7 +46,7 @@ Add to your MCP configuration:
 
 ## Configuration
 
-The server works out of the box with anonymous access (20 searches/day). For higher limits, configure an API key.
+The server works out of the box with anonymous access (100 searches/day). For higher limits, configure an API key.
 
 ### Environment Variables
 
@@ -98,11 +98,12 @@ List all available documentation sources.
 
 ## Rate Limits
 
-| Plan | Daily Searches |
-|------|----------------|
-| Anonymous | 20 |
-| Free | 100 |
-| Pro | Unlimited |
+| Access | Daily Searches |
+|--------|----------------|
+| Anonymous | 100 |
+| Free (with API key) | 1,000 |
+
+Limits reset at midnight UTC.
 
 ## Development
 

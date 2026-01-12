@@ -70,7 +70,7 @@ export async function executeSearchDocumentation(
     if (results.length === 0) {
       let message = `No results found for query: "${parsed.query}"`;
       message += `\n\n**Searched:** ${stackDescription}`;
-      message += `\n**Usage:** ${response.usage.used}/${response.usage.limit} searches used this month`;
+      message += `\n**Usage:** ${response.usage.used}/${response.usage.limit} searches used today`;
 
       return {
         content: [{ type: 'text', text: message }],
@@ -94,7 +94,7 @@ ${result.snippet}
     const responseText = `# Search Results for "${parsed.query}"
 
 Found ${results.length} result(s) in ${stackDescription}
-**Usage:** ${response.usage.used}/${response.usage.limit} searches this month
+**Usage:** ${response.usage.used}/${response.usage.limit} searches today
 
 ${formattedResults.join('\n\n')}`;
 

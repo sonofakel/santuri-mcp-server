@@ -6,8 +6,8 @@ Thank you for your interest in contributing!
 
 ```bash
 # Clone the repository
-git clone https://github.com/sonofakel/santuri-mcp-server.git
-cd santuri-mcp-server
+git clone https://github.com/santuri-io/santuri.git
+cd santuri/packages/mcp-server
 
 # Install dependencies
 pnpm install

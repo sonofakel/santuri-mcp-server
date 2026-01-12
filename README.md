@@ -1,10 +1,10 @@
 # santuri-mcp-server
 
-MCP (Model Context Protocol) server for [Santuri](https://santuri.io) - providing documentation context to AI coding assistants.
+MCP server for [Santuri](https://santuri.io) — official llms.txt documentation for AI assistants.
 
 ## Overview
 
-This server implements the [Model Context Protocol](https://modelcontextprotocol.io/) to give AI assistants like Claude, Cursor, and Windsurf access to up-to-date technical documentation. Search across 50+ documentation sources including React, Next.js, Supabase, Tailwind, and more.
+This server implements the [Model Context Protocol](https://modelcontextprotocol.io/) to give AI assistants like Claude, Cursor, and Windsurf access to up-to-date technical documentation. Search across curated documentation sources including React, Next.js, Supabase, Tailwind, and more.
 
 ## Installation
 
@@ -72,7 +72,7 @@ The server works out of the box with anonymous access (100 searches/day). For hi
 }
 ```
 
-Get your API key at [santuri.io/settings](https://santuri.io/settings).
+Get your API key at [santuri.io/api-keys](https://santuri.io/api-keys).
 
 ## Available Tools
 

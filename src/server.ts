@@ -124,7 +124,7 @@ export async function startServer(): Promise<void> {
     const config = initApiClient();
     console.error(`Santuri MCP server initialized`);
     console.error(`  API URL: ${config.apiUrl}`);
-    console.error(`  Mode: ${config.apiKey ? 'authenticated' : 'anonymous (20 searches/day)'}`);
+    console.error(`  Mode: ${config.apiKey ? 'authenticated' : 'anonymous (100 searches/day)'}`);
     console.error(`  Stack ID: ${config.stackId || 'not configured (using all sources)'}`);
   } catch (error) {
     console.error(`Failed to initialize: ${error instanceof Error ? error.message : 'Unknown error'}`);
